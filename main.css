@@ -63,3 +63,41 @@ when hovering. */
       top: 100px;
     }
   }
+  
+.square{
+    width:100px;
+    height:100px;
+    background-color:#AB5543;
+    margin: 20px;
+    transform: skew(50deg)
+}
+
+
+.jumping {
+    height: 100px;
+    width:100px;
+    background-color: #000;
+    margin:100px;
+    transition:  transform 1s ease-in-out;
+
+}
+
+.jumping:hover {
+    transform:scale(2)
+}
+
+.rotate {
+    width:100px;
+    height:100px;
+    background-color: #2F62EA;
+   animation : spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg)
+    }
+}
